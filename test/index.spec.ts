@@ -15,9 +15,9 @@ describe('AMMuenchTSApp', () => {
 	});
 
 	describe('AMMuenchTSApp.helloworld method', () => {
-		it(`Should return 'Hello World, I am a typescript app'`, () => {
+		it(`Should return '🦈   Hello World, I am a typescript app'`, () => {
 			expect(classInstance.helloWorld()).to.equal(
-				'Hello World, I am a typescript app',
+				'🦈   Hello World, I am a typescript app',
 			);
 		});
 	});

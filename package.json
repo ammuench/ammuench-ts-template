@@ -20,15 +20,15 @@
 		}
 	},
   "scripts": {
-    "build": "npm run clean && npm run lint && echo Using TypeScript && tsc --version && tsc --pretty",
+    "build": "yarn clean && yarn lint && echo Using TypeScript && tsc --version && tsc --pretty",
+    "build:watch": "yarn build --watch",
     "clean": "rimraf lib",
     "coverage": "nyc --include='src/**/*.ts' --reporter=text --reporter=html --reporter=lcov mocha --require ts-node/register --recursive 'test/**/*.spec.ts'",
-    "lint": "tslint --force --format verbose \"src/**/*.ts\"",
+    "lint": "pretty-quick",
 		"pq:stage": "pretty-quick --staged",
-    "test": "npm run build && mocha  -r ts-node/register --recursive 'test/**/*.spec.ts'",
-    "start": "node dist/index.js",
-    "watch": "npm run build -- --watch",
-    "watch:test": "npm run test -- --watch"
+    "test": "yarn build && mocha  -r ts-node/register --recursive 'test/**/*.spec.ts'",
+    "test:watch": "yarn test --watch",
+    "start": "node dist/index.js"
   },
   "devDependencies": {
     "@types/chai": "^4.1.0",
