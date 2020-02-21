@@ -1,9 +1,7 @@
-class AMMuenchTSApp {
-    public helloWorld() {
-        console.log('Hello World, I am a typescript app');
-    }
+export class AMMuenchTSApp {
+	public helloWorld() {
+		return 'Hello World, I am a typescript app';
+	}
 }
-
 const myApp = new AMMuenchTSApp();
-
 myApp.helloWorld();
