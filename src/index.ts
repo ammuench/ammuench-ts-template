@@ -1,1 +1,1 @@
-console.log('Welcome to my cool ts template -- Alex Muench')
+console.log("Welcome to my TS Template -- Alex Muench");
