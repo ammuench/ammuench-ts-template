@@ -1,9 +1,9 @@
 {
-  "name": "github-api-demo",
-  "version": "1.0.0",
-  "main": "server.js",
+  "name": "ammuench-ts-template",
+  "version": "2.0.0",
+  "main": "index.js",
   "scripts": {
-    "start": "./dist/index.js",
+    "start": "ts-node ./src/index.ts",
     "build": "tsc --build",
     "watch": "nodemon --watch 'src/**' --ext 'ts,json' --ignore 'src/**/*.spec.ts' --exec 'ts-node src/index.ts'",
     "test": "jest",
